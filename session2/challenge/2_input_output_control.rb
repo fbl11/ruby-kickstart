@@ -22,7 +22,7 @@ def hi_hi_goodbye
   puts "Please enter a number (between 1 - 10), or type 'bye' to exit."
   input = gets.chomp
 
-  while gets.chomp != "bye"
+  while input != "bye"
     input.to_i.times do
     puts "hi"
   end

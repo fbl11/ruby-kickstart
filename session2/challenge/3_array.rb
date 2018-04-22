@@ -1,5 +1,5 @@
 # Write a method named every_other_char for strings that,
-# returns an array containing every other character
+# returns a string containing every other character
 #
 # example:
 # "abcdefg".every_other_char  # => "aceg"
@@ -7,5 +7,8 @@
 
 class String
   def every_other_char
+    self.split('')
+    .select.with_index { |char, index| index.even? }
+    .join
   end
 end
